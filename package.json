@@ -1,0 +1,96 @@
+{
+  "name": "raneto",
+  "version": "0.17.0",
+  "description": "Markdown powered Knowledgebase",
+  "author": "Gilbert Pellegrom <gilbert@pellegrom.me>",
+  "license": "MIT",
+  "keywords": [
+    "raneto",
+    "knowledgebase",
+    "markdown",
+    "static",
+    "site",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gilbitron/Polymicrobial Systems.git"
+  },
+  "bugs": "https://github.com/gilbitron/Polymicrobial Systems/issues",
+  "contributors": [
+    "https://github.com/gilbitron/Polymicrobial Systems/graphs/contributors"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/gilbitron/Polymicrobial Systems/master/LICENSE"
+    }
+  ],
+  "bin": "./bin/raneto",
+  "main": "./app/index.js",
+  "scripts": {
+    "start": "node polymicrobial-systems/server.js",
+    "start_win": "node polymicrobial-systems/server.js",
+    "test": "npm run lint && mocha --reporter spec test/*.js",
+    "gulp": "gulp",
+    "lint": "./node_modules/.bin/eslint bin/* app/**/*.js polymicrobial-systems/**/*.js test/*.js gulpfile.js",
+    "postinstall": "gulp default"
+  },
+  "engines": {
+    "node": ">=10.22.1"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "bootstrap": "4.6.0",
+    "bootstrap-rtl": "3.3.4",
+    "commander": "7.2.0",
+    "cookie-parser": "1.4.5",
+    "cookie-session": "^1.4.0",
+    "debug": "4.3.1",
+    "express": "4.17.1",
+    "express-session": "1.17.1",
+    "extend": "3.0.2",
+    "fitvids": "2.1.1",
+    "fs-extra": "9.1.0",
+    "glob": "7.1.6",
+    "highlightjs": "9.16.2",
+    "hogan-express": "0.5.2",
+    "jquery": "3.6.0",
+    "jquery-backstretch": "2.1.18",
+    "js-yaml": "4.0.0",
+    "lunr": "2.3.9",
+    "lunr-languages": "1.4.0",
+    "markdown-it": "12.0.4",
+    "markdown-toc": "1.2.0",
+    "marked": "2.0.1",
+    "masonry-layout": "4.2.2",
+    "moment": "2.29.1",
+    "morgan": "1.10.0",
+    "node-fetch": "2.6.1",
+    "passport": "0.4.1",
+    "passport-google-oauth20": "2.0.0",
+    "popper.js": "1.16.1",
+    "sanitize-filename": "1.6.3",
+    "serve-favicon": "2.5.0",
+    "sitemap": "6.4.0",
+    "sweetalert2": "10.15.7",
+    "underscore": "1.12.1",
+    "underscore.string": "3.3.5",
+    "validator": "13.5.2"
+  },
+  "devDependencies": {
+    "always-tail": "0.2.0",
+    "chai": "4.3.4",
+    "eslint": "7.23.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.3.1",
+    "eslint-plugin-standard": "5.0.0",
+    "gulp": "4.0.2",
+    "gulp-shell": "0.8.0",
+    "mocha": "8.3.2",
+    "pm2": "4.5.5",
+    "supertest": "6.1.3"
+  }
+}
